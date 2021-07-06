@@ -1,5 +1,5 @@
 {
-	"name": "CSSViewer",
+	"name": "CSSViewer-Dev",
 	"manifest_version": 2,
 	"version": "1.7",
 
@@ -18,7 +18,7 @@
 
 	"browser_action": {
 		"default_icon": "img/16.png",
-		"default_title": "CSSViewer"
+		"default_title": "CSSViewer-Dev"
 	},
 
 	"web_accessible_resources": [

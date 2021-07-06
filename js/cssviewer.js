@@ -633,7 +633,7 @@ function CSSViewerMouseMove(e)
 	
 	var pageWidth = window.innerWidth;
 	var pageHeight = window.innerHeight;
-	var blockWidth = 332;
+	var blockWidth = 532;
 	var blockHeight = document.defaultView.getComputedStyle(block, null).getPropertyValue('height');
 
 	blockHeight = blockHeight.substr(0, blockHeight.length - 2) * 1;
@@ -645,7 +645,7 @@ function CSSViewerMouseMove(e)
 			block.style.left = 0 + 'px';
 	}
 	else
-		block.style.left = (e.pageX + 20) + 'px';
+		block.style.left = (e.pageX + 50) + 'px';
 
 	if ((e.pageY + blockHeight) > pageHeight) {
 		if ((e.pageY - blockHeight - 10) > 0)
@@ -746,7 +746,7 @@ function CSSViewer()
 			footer.id = 'CSSViewer_footer';
 
 			//< 
-			footer.appendChild( document.createTextNode('CSSViewer 1.7. keys: [f] Un/Freeze. [c] Css. [Esc] Close.') ); 
+			footer.appendChild( document.createTextNode('Keys: [f] Un/Freeze. [c] Css. [Esc] Close.') ); 
 			block.appendChild(footer);
 		}
 		
